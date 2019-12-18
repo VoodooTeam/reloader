@@ -37,19 +37,35 @@ $ npm install @voodoo.io/reloader --save
 ## Instantiation & init
 
 ```javascript
+const ConfigManager = require('@voodoo.io/reloader')
+const configManager = new ConfigManager()
+
+// create a config function that should be run every 2 seconds
+configManager.addFunction("config", async () => {
+  // my stuff to reload here ....
+}, 2000)
+
+await configManager.init()
 
 ```
 
 ## Basic usage
+
+If your function returns a result it's accessible through "get" method.
+
 ```javascript
+configManager.get('config')
+// or
+configManager.getAll()
 
 ```
 
-## Config
+## Constructor params
 
-| Property           | description                              | Default value  |
+| Params             | description                              | Default value  |
 | -------------------|:----------------------------------------:|:--------------:|
-| `delay`            | Interval in ms between two reloading     | 60000    (1min)|
+| `delay`            | Interval in ms between two check, only   | 60000    (1min)|
+|                    | one timer is used to check each function |                |
 
 
 # Test
