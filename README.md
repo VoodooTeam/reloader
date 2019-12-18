@@ -2,11 +2,6 @@
 <b>Reloader</b><br/>
 <br/><br/>
 
-<a href="https://badge.fury.io/js/reloader">
-   <img src="https://badge.fury.io/js/reloader.svg" alt="npm version" height="18">
-</a>
-</div>
-
 
 # Purpose
 
