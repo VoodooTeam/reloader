@@ -7,7 +7,7 @@ describe('Realoader', () => {
         })
 
         it('should launch interval to retrieve config', async () => {
-            const reloader = new Reloader(100)
+            const reloader = new Reloader(200)
             const mockRetrieveConf = jest.spyOn(reloader, 'retrieve')
             let counter = 0
             reloader.addFunction('test', () => { return new Promise(resolve => resolve(++counter)) })
@@ -17,12 +17,12 @@ describe('Realoader', () => {
             expect(res).toEqual(1)
             expect(mockRetrieveConf.mock.calls.length).toEqual(1)
 
-            await new Promise(resolve => setTimeout(resolve, 100))
+            await new Promise(resolve => setTimeout(resolve, 200))
             res = await reloader.get('test')
-            expect(res).toEqual(1)
+            expect(res).toEqual(2)
             expect(mockRetrieveConf.mock.calls.length).toEqual(2)
 
-            await new Promise(resolve => setTimeout(resolve, 100))
+            await new Promise(resolve => setTimeout(resolve, 200))
 
             expect(mockRetrieveConf.mock.calls.length).toEqual(3)
             res = await reloader.get('test')
