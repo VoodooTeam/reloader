@@ -2,12 +2,25 @@
   "name": "@voodoo.io/reloader",
   "version": "1.0.4",
   "description": "Simple module to run a function periodically.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.js"
+  },
+  "files": [
+    "src/**"
+  ],
   "keywords": [
     "reload",
     "setInterval"
   ],
   "homepage": "https://github.com/VoodooTeam/reloader",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoodooTeam/reloader.git"
+  },
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "lint": "./node_modules/.bin/eslint -c ./.eslintrc ./",
@@ -25,12 +38,12 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "jest": "^26.1.0"
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^26.6.3"
   }
 }
