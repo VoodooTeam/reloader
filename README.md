@@ -1,4 +1,3 @@
-<div align="center">
 <b>Reloader</b><br/>
 <br/><br/>
 
