@@ -9,7 +9,6 @@
 [![Opened PR](https://img.shields.io/github/issues-pr-raw/VoodooTeam/reloader)](https://github.com/VoodooTeam/reloader/pulls)
 [![DeepScan grade](https://deepscan.io/api/teams/12068/projects/15412/branches/307225/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=12068&pid=15412&bid=307225)
 [![Code coverage](https://codecov.io/gh/VoodooTeam/reloader/branch/master/graph/badge.svg)](https://codecov.io/gh/VoodooTeam/reloader)
-![Dependencies](https://img.shields.io/david/VoodooTeam/reloader)
 
 
 
@@ -21,17 +20,18 @@ Minimalist, efficient and performance focused module to run a function at a spec
 
 **/!\ This module use async/await syntax, this is why you must have node 7.6+.**
 
-Supported and tested : >= 7.6
+Supported and tested : >= 14
 
 | Version       | Supported     | Tested         |
 | ------------- |:-------------:|:--------------:|
+| 18.x          | yes           | yes            |
 | 16.x          | yes           | yes            |
 | 14.x          | yes           | yes            |
-| 12.x          | yes           | yes            |
-| 10.x          | yes           | yes            |
-| 9.x           | yes           | yes            |
-| 8.x           | yes           | yes            |
-| >= 7.6        | yes           | yes            |
+| 12.x          | no            | yes            |
+| 10.x          | no            | yes            |
+| 9.x           | no            | yes            |
+| 8.x           | no            | yes            |
+| >= 7.6        | no            | yes            |
 
 # Installation
 
